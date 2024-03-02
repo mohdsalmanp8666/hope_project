@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "22209321914",
+    "firebase_url": "https://hope-project-diploma-default-rtdb.firebaseio.com",
+    "project_id": "hope-project-diploma",
+    "storage_bucket": "hope-project-diploma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22209321914:android:9de27f3ca926528fd85b83",
+        "android_client_info": {
+          "package_name": "com.example.hope_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22209321914-uqv31hluh2lmepqn5k72qfbdaprf3843.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hope_project",
+            "certificate_hash": "ab72d69054d41de1867474c0c6305f59e356b6d3"
+          }
+        },
+        {
+          "client_id": "22209321914-0uu452p69e1f168183q26mt59okj4o80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQsrUsF6X8cKbVi38qFc_rPjg-ErXlQ2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22209321914-0uu452p69e1f168183q26mt59okj4o80.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "22209321914-jisbf6j1b2su2rpe375aq6uficf3u9ff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hopeProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
