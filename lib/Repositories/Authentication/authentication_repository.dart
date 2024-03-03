@@ -7,7 +7,7 @@ import 'package:hope_project/UI/login_screen.dart';
 import 'package:hope_project/UI/verify_email_screen.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/models/UserModel.dart';
+import 'package:hope_project/models/user_model.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();

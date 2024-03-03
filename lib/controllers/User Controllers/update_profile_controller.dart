@@ -8,7 +8,7 @@ import 'package:hope_project/Repositories/User/user_repository.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
 import 'package:hope_project/controllers/drawerController.dart';
-import 'package:hope_project/models/UserModel.dart';
+import 'package:hope_project/models/user_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 class UpdateProfileController extends GetxController {

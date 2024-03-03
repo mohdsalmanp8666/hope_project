@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:hope_project/common/customAppBar.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/controllers/donateController.dart';
+import 'package:hope_project/controllers/User%20Controllers/donateController.dart';
 import 'package:hope_project/routes/app_routes.dart';
 import 'package:panara_dialogs/panara_dialogs.dart';
 

@@ -2,12 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/Repositories/Authentication/authentication_repository.dart';
-import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/controllers/authController.dart';
-import 'package:hope_project/utils/utils.dart';
+// import 'package:hope_project/controllers/authController.dart';
 
 class LoginController extends GetxController {
-  final _authController = AuthController();
+  // final _authController = AuthController();
   final _loading = false.obs;
   bool get loading => _loading.value;
   set loading(value) => _loading.value = value;
@@ -83,18 +81,18 @@ class LoginController extends GetxController {
     loading = false;
   }
 
-  googleLogin() async {
-    final user = await _authController.signInWithGoogle();
-    if (user != null) {
-      Utils.navigateUserToNextPage(
-        user,
-        _authController,
-        isLoggedIn: true,
-      );
-    } else {
-      errorToast("Something went wrong!");
-    }
-  }
+  // googleLogin() async {
+  //   final user = await _authController.signInWithGoogle();
+  //   if (user != null) {
+  //     Utils.navigateUserToNextPage(
+  //       user,
+  //       _authController,
+  //       isLoggedIn: true,
+  //     );
+  //   } else {
+  //     errorToast("Something went wrong!");
+  //   }
+  // }
 
   logout() async {
     await FirebaseAuth.instance.signOut();

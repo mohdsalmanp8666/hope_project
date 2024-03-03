@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/Repositories/NGO/ngo_repository.dart';
 import 'package:hope_project/common/customLog.dart';
-import 'package:hope_project/models/UserModel.dart';
+import 'package:hope_project/models/user_model.dart';
 
 class HomeController extends GetxController {
   final ScrollController scrollController = ScrollController();

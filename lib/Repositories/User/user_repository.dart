@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/models/UserModel.dart';
+import 'package:hope_project/models/user_model.dart';
 
 class UserRepository extends GetxController {
   static UserRepository get instance => Get.find();

@@ -100,4 +100,11 @@ class AppValidator {
     }
     return null;
   }
+
+  static String? validateCaptions(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Captions Required';
+    }
+    return null;
+  }
 }

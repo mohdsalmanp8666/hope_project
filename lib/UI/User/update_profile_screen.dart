@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import 'package:hope_project/common/customAppBar.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/controllers/update_profile_controller.dart';
+import 'package:hope_project/controllers/User%20Controllers/update_profile_controller.dart';
 import 'package:hope_project/utils/validations.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';

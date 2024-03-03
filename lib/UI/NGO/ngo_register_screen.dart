@@ -9,7 +9,7 @@ import 'package:hope_project/UI/User/user_register_screen.dart';
 import 'package:hope_project/common/customAppBar.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/controllers/ngo_register_controller.dart';
+import 'package:hope_project/controllers/NGO%20Controllers/ngo_register_controller.dart';
 import 'package:hope_project/utils/validations.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';

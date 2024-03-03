@@ -6,8 +6,7 @@ import 'package:hope_project/UI/User/donateScreen.dart';
 import 'package:hope_project/common/customAppBar.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
-import 'package:hope_project/controllers/home_controller.dart';
-import 'package:hope_project/controllers/ngo_home_controller.dart';
+import 'package:hope_project/controllers/NGO%20Controllers/home_controller.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 
 class NGOHomeScreen extends StatelessWidget {

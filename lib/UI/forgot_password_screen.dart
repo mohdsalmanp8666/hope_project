@@ -42,7 +42,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                   TextFormField(
                     cursorColor: mainColor,
                     controller: forgotPasswordController.email,
-                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                    onTapOutside: (event) =>
+                        FocusManager.instance.primaryFocus?.unfocus(),
                     validator: (value) => AppValidator.validateEmail(value),
                     decoration: customInputDecoration(
                       label: 'Email',
@@ -54,25 +55,26 @@ class ForgotPasswordScreen extends StatelessWidget {
                   SizedBox(
                     height: 50,
                     width: MediaQuery.of(context).size.width - 150,
-                    child: Obx(() => forgotPasswordController.loading
-                        ? Center(
-                            child: customLoadingAnimation(
-                              size: 25,
-                              color: Colors.white,
-                            ),
-                          )
-                        : ElevatedButton(
-                            onPressed: () => forgotPasswordController.loading
-                                ? successToast("Please wait...")
-                                : forgotPasswordController.sendResetLink(),
-                            style: ElevatedButton.styleFrom(
-                                backgroundColor: mainColor),
-                            child: AutoSizeText(
+                    child: ElevatedButton(
+                        onPressed: () => forgotPasswordController.loading
+                            ? successToast("Please wait...")
+                            : forgotPasswordController.sendResetLink(),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: mainColor,
+                        ),
+                        child: Obx(() => forgotPasswordController.loading
+                            ? Center(
+                                child: customLoadingAnimation(
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              )
+                            : AutoSizeText(
                               "Send Email",
                               style: customTextStyle(
                                 color: Colors.white,
                               ),
-                            ),
+                              )
                           )),
                   )
                 ],

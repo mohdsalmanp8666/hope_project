@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/Repositories/NGO/ngo_repository.dart';
 import 'package:hope_project/common/customLog.dart';
-import 'package:hope_project/models/UserModel.dart';
+import 'package:hope_project/models/user_model.dart';
 
 class DonateController extends GetxController {
   

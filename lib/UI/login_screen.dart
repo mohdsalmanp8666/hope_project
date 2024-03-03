@@ -134,35 +134,35 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   const Gap(25),
-                  AutoSizeText(
-                    "or",
-                    style: customTextStyle(
-                      color: Colors.grey.shade600,
-                      fontSize: 16,
-                    ),
-                  ),
-                  const Gap(25),
-                  SizedBox(
-                    height: 50,
-                    width: MediaQuery.of(context).size.width - 150,
-                    child: ElevatedButton(
-                      onPressed: () =>
+                  // AutoSizeText(
+                  //   "or",
+                  //   style: customTextStyle(
+                  //     color: Colors.grey.shade600,
+                  //     fontSize: 16,
+                  //   ),
+                  // ),
+                  // const Gap(25),
+                  // SizedBox(
+                  //   height: 50,
+                  //   width: MediaQuery.of(context).size.width - 150,
+                  //   child: ElevatedButton(
+                  //     onPressed: () =>
 
-                          // loginController.googleLogin(),
-                          successToast("Currently not enabled!"),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: mainColor,
-                      ),
-                      child: AutoSizeText(
-                        "Sign in with Google",
-                        style: customTextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Gap(75),
+                  //         // loginController.googleLogin(),
+                  //         successToast("Currently not enabled!"),
+                  //     style: ElevatedButton.styleFrom(
+                  //       backgroundColor: mainColor,
+                  //     ),
+                  //     child: AutoSizeText(
+                  //       "Sign in with Google",
+                  //       style: customTextStyle(
+                  //         fontSize: 18,
+                  //         color: Colors.white,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                  // const Gap(75),
                   GestureDetector(
                     onTap: () => Get.to(() => const UserRegisterScreen()),
                     child: AutoSizeText.rich(

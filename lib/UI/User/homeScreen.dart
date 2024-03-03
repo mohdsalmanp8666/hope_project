@@ -10,7 +10,7 @@ import 'package:hope_project/common/custom_drawer.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
 import 'package:hope_project/controllers/drawerController.dart';
-import 'package:hope_project/controllers/home_controller.dart';
+import 'package:hope_project/controllers/NGO%20Controllers/home_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
       appBar: appBarSize(
         context,
         child: CustomAppbar(
-          leading: DrawerButton(
+          leading: const DrawerButton(
             style: ButtonStyle(
               foregroundColor: MaterialStatePropertyAll(Colors.white),
             ),
