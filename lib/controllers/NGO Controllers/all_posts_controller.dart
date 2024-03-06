@@ -28,7 +28,7 @@ class AllPostsController extends GetxController {
       loading = true;
 
       final List<QueryDocumentSnapshot?> result = await PostRepository.instance
-          .getPost(
+          .getPosts(
               AuthenticationRepository.instance.currentUser!.id.toString());
 
       posts = result

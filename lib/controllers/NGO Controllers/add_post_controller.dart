@@ -50,11 +50,15 @@ class AddPostController extends GetxController {
       }
 
       final storageRepo = Get.put(StorageRepository());
-
-      final id = AuthenticationRepository.instance.currentUser!.id;
+final user = AuthenticationRepository.instance.currentUser!;
+      final id = user.id;
+      final ngoName = user.nGOData!.name;
+      final ngoPic = user.nGOData!.pic;
 
       var post = PostModel(
           ngoID: id,
+          ngoName: ngoName,
+          ngoPic: ngoPic,
           image: await storageRepo.uploadPostImage(
             id.toString(),
             File(pic!.path),

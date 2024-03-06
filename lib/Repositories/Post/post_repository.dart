@@ -20,16 +20,32 @@ class PostRepository extends GetxController {
     }
   }
 
-  getPost(String id) async {
+  getPosts(String id) async {
     try {
-      customLog("Inside Get Posts");
-      customLog(id);
       return await _db
           .collection('posts')
           .where('ngoID', isEqualTo: id)
           .get()
           .then((value) {
-        customLog(value.docs);
+        customLog("Fetched Posts of NGO: ${value.docs.length}");
+        return value.docs;
+      });
+    } on FirebaseException catch (e) {
+      return throw successToast(e.message);
+    } catch (e) {
+      return throw errorToast(e.toString());
+    }
+  }
+
+  recentPosts() async {
+    try {
+      return await _db
+          .collection('posts')
+          .orderBy('addedOn', descending: true)
+          .limit(7)
+          .get()
+          .then((value) {
+        customLog("Number of recent Feeds: ${value.docs.length}");
         return value.docs;
       });
     } on FirebaseException catch (e) {

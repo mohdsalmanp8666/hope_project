@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/Repositories/Authentication/authentication_repository.dart';
-import 'package:hope_project/UI/User/homeScreen.dart';
+import 'package:hope_project/UI/User/donation_history.dart';
+import 'package:hope_project/UI/User/home_screen.dart';
 import 'package:hope_project/UI/User/update_profile_screen.dart';
 import 'package:hope_project/common/customLog.dart';
 import 'package:hope_project/common/globals.dart';
@@ -39,12 +40,7 @@ class CustomDrawer extends StatelessWidget {
               title: "Donations",
             ),
             DrawerItemWidget(
-              index: 4,
-              leadingIcon: Icons.logout_outlined,
-              title: "Demo",
-            ),
-            DrawerItemWidget(
-              index: 5,
+              index: 10,
               leadingIcon: Icons.logout_outlined,
               title: "Logout",
             ),
@@ -74,7 +70,7 @@ class DrawerItemWidget extends StatelessWidget {
       onTap: () async {
         Get.back();
         if (drawerController.selectedIndex != index) {
-          if (index != 5) drawerController.selectedIndex = index;
+          if (index != 10) drawerController.selectedIndex = index;
           switch (index) {
             // ? Case for Home Page (i.e Menu Item 1)
             case 1:
@@ -84,32 +80,16 @@ class DrawerItemWidget extends StatelessWidget {
             // ? Case for Profile Page (i.e Menu Item 2)
             case 2:
               customLog("Profile Page Clicked");
-              // successToast("Not Ready!");
-              var type = AuthenticationRepository.instance.currentUser!.userType
-                  .toString();
-              // Get.to(() => ());
-              customLog(type);
-
-              // if (type == UserType.USER.name) {
               Get.to(() => UpdateProfileScreen());
-              // }
-              // Get.offAndToNamed(Routes.profile);
               break;
             // ? Case for Donation History Page (i.e Menu Item 3)
             case 3:
-              customLog("Donation Pagwe Clicked");
-              // TODO: Have to implement routing
-              successToast("Not Ready!");
-              // Get.offAndToNamed(Routes.donations);
+              customLog("Donation Page Clicked");
+              Get.to(() => DonationHistoryScreen());
               break;
-            case 4:
-              customLog("Donation Pagwe Clicked");
-              // TODO: Have to implement routing
-              successToast("Not Ready!");
-              // Get.offAndToNamed(Routes.demo);
-              break;
+           
             // ? Case for Logout Functionality (i.e Menu Item 4)
-            case 5:
+            case 10:
               customLog("Logout Menu Item Clicked!");
               Get.dialog(
                 AlertDialog(

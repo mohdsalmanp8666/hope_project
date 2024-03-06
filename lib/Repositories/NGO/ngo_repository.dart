@@ -49,12 +49,25 @@ class NGORepository extends GetxController {
     }
   }
 
+  Future<DocumentReference<Object?>?> getNGOReference(String ngoID) async {
+    try {
+      return await _db.collection('requirements').doc(ngoID);
+      // .where('id', isEqualTo: ngoID).
+      // .get();
+    } on FirebaseException catch (e) {
+      customLog("Firebase Firestore Exception, ${e.message}");
+      throw errorToast("Something went wrong!");
+    } catch (e) {
+      customLog(e);
+    }
+  }
+
   loadNGO() async {
     try {
       return await _db
           .collection('users')
           .where('userType', isEqualTo: "NGO")
-          .limit(5)
+          .limit(10)
           .get()
           .then((value) => value.docs);
     } on FirebaseException catch (e) {

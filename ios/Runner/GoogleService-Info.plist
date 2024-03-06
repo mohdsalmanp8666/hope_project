@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>22209321914-jisbf6j1b2su2rpe375aq6uficf3u9ff.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.22209321914-jisbf6j1b2su2rpe375aq6uficf3u9ff</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>22209321914-uqv31hluh2lmepqn5k72qfbdaprf3843.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDg2a7ObSnZ4ENZjGlOb5J4YbMlJKItFW8</string>
 	<key>GCM_SENDER_ID</key>
@@ -26,5 +32,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:22209321914:ios:a9cdc1634020f48bd85b83</string>
+	<key>DATABASE_URL</key>
+	<string>https://hope-project-diploma-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

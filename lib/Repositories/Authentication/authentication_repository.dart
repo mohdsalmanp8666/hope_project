@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:hope_project/Repositories/User/user_repository.dart';
 import 'package:hope_project/UI/NGO/ngo_dashboard_screen.dart';
-import 'package:hope_project/UI/User/homeScreen.dart';
+import 'package:hope_project/UI/User/home_screen.dart';
 import 'package:hope_project/UI/login_screen.dart';
 import 'package:hope_project/UI/verify_email_screen.dart';
 import 'package:hope_project/common/customLog.dart';

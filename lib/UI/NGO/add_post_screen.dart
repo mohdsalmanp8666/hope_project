@@ -63,8 +63,9 @@ class AddPostScreen extends StatelessWidget {
                     onTap: () async {
                       DateTime? pickedDate = await showDatePicker(
                         context: context,
-                        lastDate: DateTime.now().add(const Duration(days: 10)),
-                        firstDate: DateTime.now(),
+                        lastDate:
+                            DateTime.now(), //.add(const Duration(days: 10)),
+                        firstDate: DateTime(2000),
                         initialDate: DateTime.now(),
                       );
                       if (pickedDate == null) return;
@@ -85,17 +86,20 @@ class AddPostScreen extends StatelessWidget {
                     onTap: () async {
                       DateTime? pickedDate = await showDatePicker(
                         context: context,
-                        lastDate: DateTime.now().add(const Duration(days: 30)),
-                        firstDate: addPostController.startDate.text.isEmpty
-                            ? DateTime.now().add(const Duration(days: 1))
-                            : DateTime.tryParse(
-                                    addPostController.startDate.text)!
-                                .add(const Duration(days: 1)),
-                        initialDate: addPostController.startDate.text.isEmpty
-                            ? DateTime.now().add(const Duration(days: 1))
-                            : DateTime.tryParse(
-                                    addPostController.startDate.text)!
-                                .add(const Duration(days: 1)),
+                        lastDate: DateTime.now(),
+                        // .add(const Duration(days: 30)),
+                        firstDate: DateTime(2000),
+                        // addPostController.startDate.text.isEmpty
+                        //     ? DateTime.now().add(const Duration(days: 1))
+                        //     : DateTime.tryParse(
+                        //             addPostController.startDate.text)!
+                        //         .add(const Duration(days: 1)),
+                        initialDate: DateTime.now(),
+                        // addPostController.startDate.text.isEmpty
+                        //     ? DateTime.now().add(const Duration(days: 1))
+                        //     : DateTime.tryParse(
+                        //             addPostController.startDate.text)!
+                        //         .add(const Duration(days: 1)),
                       );
                       if (pickedDate == null) return;
                       addPostController.endDate.text =
